@@ -37,6 +37,10 @@ app.post('/newBooking',(req,res)=>{
     .then(res.json({status:true}));
 })
 
+app.get('/',(req,res)=>{
+    res.send("hello");
+})
+
 
 
 const PORT = process.env.PORT 
