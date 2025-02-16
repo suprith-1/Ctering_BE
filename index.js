@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:true}));
 
 const allowedOrigins = [
   'http://localhost:5173', 
-  'https://ctering-be.vercel.app' 
+  'https://hk-catrers1.netlify.app'
 ];
 
 const corsOptions = {
