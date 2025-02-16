@@ -11,7 +11,7 @@ app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-const client = require('twilio')(proceenv.accountSid, proceenv.authToken);
+const client = require('twilio')(process.env.accountSid, process.env.authToken);
 
 const me = 'whatsapp:+919381305670'
 const md = 'whatsapp:+919392646691'
