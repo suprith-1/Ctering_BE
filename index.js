@@ -32,8 +32,6 @@ app.options('*', cors(corsOptions));
 
 const client = require('twilio')(process.env.accountSid, process.env.authToken);
 
-const me = 'whatsapp:+919381305670'
-const md = 'whatsapp:+919392646691'
 app.post('/newBooking',(req,res)=>{
     console.log(req.body);
     const message = 
@@ -49,8 +47,8 @@ app.post('/newBooking',(req,res)=>{
     client.messages
     .create({
         body: message,
-        from: process.env.From,
-        to: process.env.To,
+        from: 'whatsapp:+14155238886',
+        to: 'whatsapp:+919381305670'
     })
     .then(message => console.log(message.sid))
     .then(res.json({status:true}));
