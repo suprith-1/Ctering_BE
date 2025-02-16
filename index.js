@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended:true}));
 
 
 const allowedOrigins = [
-  'http://localhost:5173', 
+  'http://localhost:5173/fourth', 
   'https://ctering-be.vercel.app' 
 ];
 
