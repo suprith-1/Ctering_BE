@@ -51,7 +51,7 @@ app.post('/newBooking',(req,res)=>{
     .create({
         body: message,
         from: 'whatsapp:+14155238886',
-        to: 'whatsapp:+916304118626'
+        to: 'whatsapp:+919392646691'
     })
    .then((message) => {console.log("Message sent: ", message.sid);res.json({ status: true });}) 
     .catch((error) => {console.error("Error: ", error);res.json({ status: false });});
