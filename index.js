@@ -30,7 +30,9 @@ app.use(cors(corsOptions));
 
 app.options('*', cors(corsOptions));
 
-const client = require('twilio')(process.env.accountSid, process.env.authToken);
+const client = require('twilio')(process.env.accountSid, process.env.authToken{
+    timeout: 60000 ;
+});
 
 app.post('/newBooking',(req,res)=>{
     console.log(req.body);
